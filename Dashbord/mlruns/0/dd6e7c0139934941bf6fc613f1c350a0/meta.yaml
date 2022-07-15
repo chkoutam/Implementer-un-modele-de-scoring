@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/koutame/Desktop/Formation%20Data%20science/Projet%207/Dashbord/mlruns/0/dd6e7c0139934941bf6fc613f1c350a0/artifacts
+end_time: 1657873411458
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: dd6e7c0139934941bf6fc613f1c350a0
+run_uuid: dd6e7c0139934941bf6fc613f1c350a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1657873407067
+status: 3
+tags: []
+user_id: koutame
