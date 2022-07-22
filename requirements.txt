@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+plotly==4.14.3
+plotly-express==0.4.0
+pillow
+pickle5
+pickle-mixin
+matplotlib
+seaborn 
+shap
+requests
+jason
