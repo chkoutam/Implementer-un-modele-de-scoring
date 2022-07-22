@@ -1,2 +1,2 @@
-plotly==4.14.3
-plotly-express==0.4.0
+plotly==4.14.3-dev
+plotly-express==0.4.0-dev
