@@ -31,7 +31,7 @@ import seaborn as sns
 import shap
 import requests
 import json
-
+import plotly
 # ====================================================================
 # VARIABLES STATIQUES
 # ====================================================================
