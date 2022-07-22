@@ -11,3 +11,4 @@ seaborn
 shap
 requests
 jason
+lightgbm
