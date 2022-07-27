@@ -19,6 +19,8 @@ __version__ = '0.0.0'
 # ====================================================================
 # Chargement des librairies
 # ====================================================================
+
+import lightgbm 
 import streamlit as st
 import numpy as np
 # import pandas as pd
@@ -32,7 +34,7 @@ import seaborn as sns
 import shap
 import requests
 import json
-
+import plotly
 # ====================================================================
 # VARIABLES STATIQUES
 # ====================================================================

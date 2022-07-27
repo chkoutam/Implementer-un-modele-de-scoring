@@ -1,10 +1,10 @@
 """Application : Dashboard de Crédit Score
 
 Auteur: Check KOUTAME
-Local URL: http://localhost:8501
-Network URL: http://192.168.1.20:8501
+Source: 
+Local URL: http://localhost:5000
+Network URL: http://ec2-34-239-54-113.compute-1.amazonaws.com:5000//invocations
 Lancement en local depuis une console anaconda prompt : 
-    cd C:\\Users\\koutame\\Desktop\\Formation Data science\\Projet 7\\Dashbord
     streamlit run Dashboard.py
 Arrêt dans la console anaconda-prompt
 """
@@ -13,7 +13,7 @@ Arrêt dans la console anaconda-prompt
 # Version : 0.0.1 - CK 04/07/2022
 # ====================================================================
 
-__version__ = '0.0.1'
+__version__ = '0.0.0'
 
 # ====================================================================
 # Chargement des librairies
@@ -30,6 +30,15 @@ import seaborn as sns
 import shap
 import requests
 import json
+
+# ====================================================================
+# Requête en local ou en ligne
+# ===================================================================
+#local
+#MLFLOW_URI = 'http://127.0.0.1:5000/invocations'
+#En ligne
+MLFLOW_URI = 'http://ec2-34-239-54-113.compute-1.amazonaws.com:5000//invocations' 
+
 
 # ====================================================================
 # VARIABLES STATIQUES
@@ -292,11 +301,7 @@ html_score="""
 st.markdown(html_score, unsafe_allow_html=True)
 
 #Preparation des request de predictions auprès de l'API mlflow
-
-MLFLOW_URI = 'http://127.0.0.1:5000/invocations'
-
-def request_prediction(model_uri, data):
-    
+def request_prediction(model_uri, data):  
     headers = {"Content-Type": "application/json"}
 
     data_json = {'data': data}
@@ -407,7 +412,7 @@ def Affiche_jauge():
 
 # Bouton de prédiction
 def Prediction():
-    MLFLOW_URI = 'http://127.0.0.1:5000/invocations'
+  
     X_test_client = test_set[test_set['SK_ID_CURR'] == client_id]
     print(X_test_client)
     #X_test_pred = X_test_client.copy

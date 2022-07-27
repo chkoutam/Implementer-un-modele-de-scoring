@@ -27,6 +27,7 @@ Dans le dossier Dashboard, se trouve principalement:
 - un fichier python dashboard.py qui permet de lancer le dashboard interractif fait sur stramlit et qui se 
 - un fichier python API.py permettant de lancer l'API mlflow et de le deployer
 connectera automatiquement à l'API afin de bien présenter les différents paramètres de l'application.
+- Un fichier InterractionAPI.py qui permet d'interagir avec l'API sans passer par le Dashboard
 
 ## Note
 Vous trouverez aussi la note méthodologie du Dashboard ansi qu'une présentation de l'ensemble de l'étude
