@@ -15,3 +15,4 @@ lightgbm
 mlflow
 flask
 flask_wtf
+gunicorn
