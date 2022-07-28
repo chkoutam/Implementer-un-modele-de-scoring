@@ -3,7 +3,8 @@
 Auteur: Check KOUTAME
 Source: 
 Local URL: http://localhost:5000
-Network URL: http://ec2-34-239-54-113.compute-1.amazonaws.com:5000//invocations
+Network URL heruku:https://app-deploiement-ck-p8.herokuapp.com/
+Network URL aws: http://ec2-34-239-54-113.compute-1.amazonaws.com:5000/invocations
 Lancement en local depuis une console anaconda prompt : 
     streamlit run Dashboard.py
 Arrêt dans la console anaconda-prompt
@@ -38,6 +39,7 @@ import json
 #MLFLOW_URI = 'http://127.0.0.1:5000/invocations'
 #En ligne
 MLFLOW_URI = 'http://ec2-34-239-54-113.compute-1.amazonaws.com:5000//invocations' 
+#MLFLOW_URI = 'https://app-deploiement-ck-p8.herokuapp.com/'
 
 
 # ====================================================================

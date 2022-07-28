@@ -1,4 +1,6 @@
-"""Interraction avec l'API: en local ou sur le web
+"""
+Permet une interraction avec l'API deployée en utilisant mlflows
+en local ou sur le web
 Auteur: Check KOUTAME
 Local URL: http://127.0.0.1:5000
 aws  : 'http://ec2-34-239-54-113.compute-1.amazonaws.com:5000/invocations'
